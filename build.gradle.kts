@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
+
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     `maven-publish`
@@ -5,8 +7,6 @@ plugins {
 
 group = "tools.kotlin.aicligui"
 version = "1.0.0"
-
-import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 
 kotlin {
     // Provide a JVM target so the module builds in this repo; code lives in commonMain
