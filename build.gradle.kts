@@ -1,6 +1,10 @@
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
+    `maven-publish`
 }
+
+group = "tools.kotlin.aicligui"
+version = "1.0.0"
 
 import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 
