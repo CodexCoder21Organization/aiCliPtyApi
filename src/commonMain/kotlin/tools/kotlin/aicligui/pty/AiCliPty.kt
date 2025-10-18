@@ -93,4 +93,12 @@ interface AiCliPty : AutoCloseable {
      * Returns true on success, false on failure.
      */
     fun persistSessionId(sessionId: String): Boolean
+
+    /**
+     * Execute a standalone prompt without an interactive session and return the LLM output.
+     * This runs the CLI in prompt mode (e.g., `claude -p "prompt"`) and captures the response.
+     * The execution happens in an empty temporary directory to avoid interfering with
+     * the current workspace.
+     */
+    suspend fun getStandaloneResponse(prompt: String): String
 }
