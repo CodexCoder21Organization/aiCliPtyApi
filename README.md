@@ -1,6 +1,8 @@
 # aiCliPtyApi
 
-Common PTY (Pseudo-Terminal) API interface definitions for AiCliGui.
+Common AiCliPty API interface definition, provides an abstract pseudo-Terminal interface for interacting with various AI CLI implementations like ClaudeCode, Codex, GeminiCLI, etc.
+
+The cannonical implementations are found in https://github.com/CodexCoder21Organization/aiCliPty/
 
 ## Overview
 
